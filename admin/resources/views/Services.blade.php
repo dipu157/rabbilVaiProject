@@ -44,8 +44,34 @@
   </div>
 </div>
 
+<!-- Modal For Delete -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-3 text-center">
+        <p class="h4 mb-4">Update Service</p>
+        <div id="serviceEditform">
+          <h5 id="serviceEditId" class="mt-4"></h5>
+          <input id="service_nameId" type="text" id="" class="form-control mb-4" >
+          <input id="service_desId" type="text" id="" class="form-control mb-4" >
+          <input id="service_imgId" type="text" id="" class="form-control mb-4"   >
+        </div>        
 
-<!-- Modal -->
+          <img id="serEditLoader" class="loading-icon d-none" src="{{asset('images/loader.gif')}}">
+          <p id="serviceWrong" class="d-none">Data Not Found. Something went wrong</p>
+      </div>
+          
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="serviceUpdateBtn" type="button" class="btn btn-danger">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal For Delete -->
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
