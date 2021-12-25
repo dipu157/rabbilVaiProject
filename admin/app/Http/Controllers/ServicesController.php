@@ -14,8 +14,8 @@ class ServicesController extends Controller
 
     function getServiceData(){
 
-    	$serviceData =  serviceModel::all();
+    	$serviceData = json_encode(serviceModel::all());
 
-  		return view('Services',compact('serviceData'));
+  		return $serviceData;
     }
 }
