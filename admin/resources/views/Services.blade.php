@@ -44,6 +44,25 @@
   </div>
 </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body text-center">
+        <h6>Are You Sure about Delete ?</h6>
+        <h5 id="serviceDeleteId" class="mt-4"></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="serviceDelConfirmBtn" type="button" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 @endsection
 
 @section('script')

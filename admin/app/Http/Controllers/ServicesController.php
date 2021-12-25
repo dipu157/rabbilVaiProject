@@ -18,4 +18,16 @@ class ServicesController extends Controller
 
   		return $serviceData;
     }
+
+    function ServiceDelete(Request $req){
+
+    	$id = $req->input('id');
+    	$result = serviceModel::where('id','=',$id)->delete();
+    	if($result == true){
+    		return 1;
+    	}else{
+    		return 0;
+    	}
+
+    }
 }
