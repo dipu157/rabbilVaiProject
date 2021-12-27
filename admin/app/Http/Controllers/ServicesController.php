@@ -55,4 +55,20 @@ class ServicesController extends Controller
         }
 
     }
+
+    function ServiceAdd(Request $req){
+
+        $name = $req->input('service_name');
+        $des = $req->input('service_des');
+        $img = $req->input('service_img');
+
+
+        $result = serviceModel::insert(['service_name'=>$name, 'service_des'=>$des,'service_img'=>$img ]);
+        if($result == true){
+            return 1;
+        }else{
+            return 0;
+        }
+
+    }
 }
