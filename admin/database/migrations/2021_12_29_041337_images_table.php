@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class VisitorTable extends Migration
+class ImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,10 @@ class VisitorTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('photo', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('location');
+        });
     }
 
     /**

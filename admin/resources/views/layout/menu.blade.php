@@ -25,6 +25,7 @@
                         <li> <a href="{{url('/projects')}}" ><span> <i class="fas fa-tasks"></i> </span><span class="hide-menu">Projects</span></a></li>
                         <li> <a href="{{url('/dashboard')}}" ><span> <i class="fas fa-search"></i> </span><span class="hide-menu">Review</span></a></li>
                         <li> <a href="{{url('/dashboard')}}" ><span> <i class="fas fa-envelope"></i> </span><span class="hide-menu">Contact</span></a></li>
+                        <li> <a href="{{url('/photo')}}" ><span> <i class="fas fa-image"></i> </span><span class="hide-menu">Photo Gallery</span></a></li>
 					</ul>
                 </nav>
             </div>

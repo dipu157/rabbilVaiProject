@@ -35,3 +35,10 @@ Route::post('/projectsdelete','ProjectController@ProjectDelete');
 Route::post('/projectsDetails','ProjectController@getProjectDetails');
 Route::post('/projectsUpdateClick','ProjectController@ProjectUpdate');
 Route::post('/projectsAdd','ProjectController@ProjectAdd');
+
+// Photo Route
+Route::get('/photo','PhotoController@PhotoIndex')->middleware('loginCheck');
+Route::post('/photoUp','PhotoController@photoUpload');
+Route::get('/photoLoad','PhotoController@PhotoJSON');
+Route::get('/photoLoadByid/{id}','PhotoController@PhotoJSONById');
+Route::post('/photoDelete','PhotoController@photoDelete');
