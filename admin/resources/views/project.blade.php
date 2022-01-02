@@ -8,7 +8,6 @@
 
       <button id="adNewProjectId" class="btn btn-primary my-3">Add New</button>
 
-
       <table id="projectTableId" class="table table-striped table-bordered" cellspacing="0" width="100%">
         <thead>
           <tr>
@@ -119,8 +118,6 @@
   </div>
 </div>
 @endsection
-
-
 
 @section('script')
 <script type="text/javascript">

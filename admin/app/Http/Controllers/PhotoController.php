@@ -15,7 +15,7 @@ class PhotoController extends Controller
 
     function PhotoJSON(){
 
-    	return PhotoModel::take(4)->get();
+    	return PhotoModel::all();
     }
 
     function PhotoJSONById(Request $request){

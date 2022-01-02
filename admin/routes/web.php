@@ -36,6 +36,22 @@ Route::post('/projectsDetails','ProjectController@getProjectDetails');
 Route::post('/projectsUpdateClick','ProjectController@ProjectUpdate');
 Route::post('/projectsAdd','ProjectController@ProjectAdd');
 
+// Contact Route
+Route::get('/contact','ContactController@ContactIndex')->middleware('loginCheck');;
+// Route::get('/projectget','ProjectController@getProjectData')->middleware('loginCheck');;
+// Route::post('/projectsdelete','ProjectController@ProjectDelete');
+// Route::post('/projectsDetails','ProjectController@getProjectDetails');
+// Route::post('/projectsUpdateClick','ProjectController@ProjectUpdate');
+// Route::post('/projectsAdd','ProjectController@ProjectAdd');
+
+// Review Route
+Route::get('/review','ReviewController@ReviewIndex')->middleware('loginCheck');;
+Route::get('/reviewget','ReviewController@getReviewData')->middleware('loginCheck');;
+// Route::post('/reviewdelete','ReviewController@ReviewDelete');
+// Route::post('/reviewsDetails','ReviewController@getReviewDetails');
+// Route::post('/reviewsUpdateClick','ReviewController@ReviewUpdate');
+// Route::post('/reviewsAdd','ReviewController@ReviewAdd');
+
 // Photo Route
 Route::get('/photo','PhotoController@PhotoIndex')->middleware('loginCheck');
 Route::post('/photoUp','PhotoController@photoUpload');
